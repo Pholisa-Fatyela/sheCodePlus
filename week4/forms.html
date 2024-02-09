@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 4 - JS Forms</title>
+    <style>
+      h1 {
+        color: #6443ea;
+        font-family: "PT Mono";
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🖱 JS Forms</h1>
+    <h2></h2>
+    <form id="search-form">
+      <input
+        type="text"
+        placeholder="Search for city"
+        autocomplete="off"
+        autofocus="on"
+        id="search-text-input"
+      />
+      <input type="submit" value="Search" />
+    </form>
+    <script>
+      function search(event) {
+        event.preventDefault();
+        let searchInput = document.querySelector("#search-text-input");
+
+        let h2 = document.querySelector("h2");
+        if (searchInput.value) {
+          h2.innerHTML = `Searching for ${searchInput.value}....`;
+        } else {
+          h2.innerHTML = null;
+          alert("Please type a city");
+        }
+      }
+      let form = document.querySelector("#search-form");
+      form.addEventListener("submit", search);
+    </script>
+  </body>
+</html>

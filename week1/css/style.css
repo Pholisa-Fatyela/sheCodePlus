@@ -1,0 +1,61 @@
+ h1 {
+     text-align: center;
+     font-weight: 900;
+     font-size: 34px;
+     line-height: 48px;
+     margin: 0;
+ }
+
+ h2 {
+     text-align: center;
+     color: #8064e9;
+     padding: 0 0 24px;
+     font-weight: 900;
+     font-size: 34px;
+     line-height: 48px;
+     margin: 0;
+ }
+
+ p {
+     font-size: 18px;
+     line-height: 28px;
+     font-family: "Source Code Pro", monospace;
+     text-align: center;
+ }
+
+ .main {
+     font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
+ }
+
+ section {
+     margin: 120px 0;
+ }
+
+ .btn-wrapper {
+     text-align: center;
+ }
+
+ button {
+     border-radius: 25px;
+     border: 1px solid #8064e9;
+     background: #8064e9;
+     color: #fff;
+     font-size: 16px;
+     line-height: 22px;
+     padding: 16px 24px;
+     text-decoration: none;
+     transition: all 200ms ease;
+     box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+ }
+
+ button:hover {
+     background: #5e41a7;
+     cursor: pointer;
+ }
+
+ footer {
+     font-size: 18px;
+     opacity: 0.7;
+     text-align: center;
+     font-family: monospace;
+ }

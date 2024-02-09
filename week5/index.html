@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 5 - AJAX</title>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1>🖲 AJAX</h1>
+    <script>
+      function displayUsername(response) {
+        let h1 = document.querySelector("h1");
+        console.log(response.data);
+
+        response.data.forEach((user) => {
+          console.log(user.username);
+        });
+        h1.innerHTML = `Hey, ${response.data[0].username}`;
+      }
+      let apiUrl = "https://jsonplaceholder.typicode.com/users";
+
+      axios.get(apiUrl).then(displayUsername);
+    </script>
+  </body>
+</html>
